@@ -3,6 +3,7 @@
 import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { taskStorage } from '@/utils/taskStorage';
+import { LABEL_COLOR_OPTIONS } from '@/types/labels';
 
 
 

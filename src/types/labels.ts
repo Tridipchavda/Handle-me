@@ -1,4 +1,4 @@
-const LABEL_OPTIONS = [
+export const LABEL_OPTIONS = [
     { value: 'Development'},
     { value: 'Documentation'},
     { value: 'Planning'},
@@ -7,7 +7,7 @@ const LABEL_OPTIONS = [
     { value: 'Other'},
   ];
 
-  const LABEL_COLOR_OPTIONS = [
+export const LABEL_COLOR_OPTIONS = [
     { value: 'Development', color: 'bg-blue-100 text-blue-800' },
     { value: 'Documentation', color: 'bg-green-100 text-green-800' },
     { value: 'Planning', color: 'bg-purple-100 text-purple-800' },
@@ -16,6 +16,6 @@ const LABEL_OPTIONS = [
     { value: 'Other', color: 'bg-gray-100 text-gray-800' },
   ];
   
-  function getLabelColor(label: string) {
+export function getLabelColor(label: string) {
     return LABEL_COLOR_OPTIONS.find(option => option.value === label)?.color || 'bg-gray-100 text-gray-800';
   }

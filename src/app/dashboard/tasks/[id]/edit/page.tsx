@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 import { taskStorage } from '@/utils/taskStorage';
 import { Task } from '@/types/task';
+import { LABEL_OPTIONS } from '@/types/labels';
 
 export default function EditTaskPage({ params }: { params: { id: string } }) {
   const router = useRouter();
