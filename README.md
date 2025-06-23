@@ -1,36 +1,86 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📝 Handle-Me
 
-## Getting Started
+**Handle-Me** is a modern productivity web application that helps you organize your **events**, **tasks**, and **journals**—all in one clean interface. Built using Next.js, PostgreSQL, and Tailwind CSS, it's designed for a smooth and thoughtful user experience.
 
-First, run the development server:
+---
+
+## ✨ Features
+
+- ✅ **Journals**  
+  - Write daily reflections or notes.
+  - Auto-save entries by date.
+  - Drag & drop image support.
+  - Clean, distraction-free editor.
+
+- 📅 **Events**  
+  - Schedule events with start/end time.
+  - View upcoming events easily.
+  - Optional reminders and statuses.
+
+- 📋 **Tasks**  
+  - Create to-do lists or projects.
+  - Mark tasks as complete.
+  - Categorize or group tasks.
+
+- 🔐 **Authentication**
+  - Secure JWT-based login system.
+  - Route protection for user data.
+
+---
+
+## 🚀 Tech Stack
+
+- **Frontend**: Next.js 14 (App Router)
+- **Backend**: API Routes with Edge & Serverless compatibility
+- **Database**: PostgreSQL
+- **Styling**: Tailwind CSS
+- **Auth**: JWT with cookie-based sessions
+- **Image Handling**: Client-side base64 drag-and-drop
+
+---
+
+## 🛠️ Installation
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+git clone https://github.com/your-username/handle-me.git
+cd handle-me
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📦 Environment Variables
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Create a **.env.local** file and configure:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```
+DATABASE_URL=postgresql://user:password@localhost:5432/db
+JWT_SECRET=your_jwt_secret
+NODE_ENV=production
+EMAIL_USER=your@email.com
+EMAIL_PASS="NOT ACTUAL PASSWORD, app code provided by google"
+```
 
-## Learn More
+## 🚀 Run Project 🚀
 
-To learn more about Next.js, take a look at the following resources:
+- Run Next Application:
+  
+```bash
+npm run dev
+```
+- Run the BullMQ Worker for sending mails on events
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+npm run worker
+``` 
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 📸 Screenshots
 
-## Deploy on Vercel
+![image](https://github.com/user-attachments/assets/6ee870dd-7dd9-4eef-b8ed-d0980be7e350)
+![image](https://github.com/user-attachments/assets/0d1c75c5-4c7a-4b8e-9cf6-d0fbd8e46d73)
+![image](https://github.com/user-attachments/assets/9cb4bcc2-afd8-4542-8ee9-5a73015067be)
+![image](https://github.com/user-attachments/assets/a23bd5a3-390e-47df-a6d5-167d7de85860)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+
+
+
